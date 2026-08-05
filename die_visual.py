@@ -1,4 +1,5 @@
 import plotly.express as px
+from plotly.graph_objs.layout import xaxis
 
 from die import Die
 
@@ -24,4 +25,8 @@ for value in poss_results:
 title = "Results of Rolling Two D6, 1'000 times"
 labels = {"x": "Result", "y": "Frequency of Result"}
 fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
+
+# Further customiza chart
+fig.update_layout(xaxis_dtick=1)
+
 fig.show()
