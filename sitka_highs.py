@@ -6,5 +6,6 @@ lines = path.read_text().splitlines()
 
 reader = csv.reader(lines)
 header_row = next(reader)
-print(reader)
-print(header_row)
+
+for i, column_header in enumerate(header_row):
+    print(i + 1, column_header)
