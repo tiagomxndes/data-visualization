@@ -14,14 +14,6 @@ while True:
     point_numbers = range(rw.num_points)
 
     ax.plot(rw.x_values, rw.y_values, linewidth=1)
-    # ax.scatter(
-    # rw.x_values,
-    #   rw.y_values,
-    #   c=point_numbers,
-    #   cmap=plt.cm.Blues,
-    #   edgecolors="none",
-    #   s=1,
-    # )
     ax.scatter(rw.x_values, rw.y_values, s=15)
     ax.set_aspect("equal")
 
