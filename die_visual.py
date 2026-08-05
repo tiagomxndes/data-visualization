@@ -1,5 +1,5 @@
 import plotly.express as px
-from plotly.graph_objs.layout import xaxis
+
 
 from die import Die
 
@@ -32,4 +32,4 @@ fig.update_layout(xaxis_dtick=1)
 fig.show()
 
 # To save my chart as an HTML file
-fig.write_html("dice_visual_d6d10.html")
+# fig.write_html("dice_visual_d6d10.html")
